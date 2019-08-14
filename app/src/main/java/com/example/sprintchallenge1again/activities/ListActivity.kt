@@ -31,6 +31,7 @@ class ListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list)
 
         add_movie_button.setOnClickListener {
+
             val intent = Intent(this, EditActivity::class.java)
             startActivityForResult(intent,
                 MOVIE_REQUEST_CODE
